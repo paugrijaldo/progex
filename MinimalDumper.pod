@@ -1,0 +1,29 @@
+=head1 NAME
+
+MinimalDumper
+
+=head1 SYNOPSIS
+
+    use MinimalDumper;
+    print Dumper(['hi', 'hello', ':)']);
+
+=head1 DESCRIPTION
+
+Given a list of scalars or reference variables, writes out their con-
+tents in perl syntax. The references can also be objects.  The contents
+of each variable is output in a single Perl statement.  Handles self-
+referential structures correctly.
+
+=head1 METHODS
+
+=over
+
+=item Dumper( LIST )
+
+Returns the stringified form of the values in the list.
+
+=back
+
+=head1 AUTHOR
+
+Paulaaaa c:
